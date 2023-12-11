@@ -16,6 +16,7 @@ import {
 import { CONTENT_SPACING, SAFE_AREA_PADDING } from '../utils/Constants';
 import { Routes } from '../utils/Routes';
 import IonIcon from 'react-native-vector-icons/Ionicons';
+import { usePreferredCameraDevice } from '../hooks/usePreferredCameraDevice';
 
 const keyExtractor = (item) => item.id;
 
@@ -86,14 +87,14 @@ function Device({ device, onPress }: DeviceProps): React.ReactElement {
 type Props = NativeStackScreenProps<Routes, 'Devices'>;
 export function DevicesPage({ navigation }: Props): React.ReactElement {
   const devices = useCameraDevices();
- // const [preferredDevice, setPreferredDevice] = usePreferredCameraDevice();
+ const [preferredDevice, setPreferredDevice] = usePreferredCameraDevice();
 
   const sections = useMemo((): SectionData[] => {
     return [
-      // {
-      //   position: 'preferred',
-      //   data: preferredDevice != null ? [preferredDevice] : [],
-      // },
+      {
+        position: 'preferred',
+        data: preferredDevice != null ? [preferredDevice] : [],
+      },
       {
         position: 'back',
         data: devices.filter((d) => d.position === 'back'),

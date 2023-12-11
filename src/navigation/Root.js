@@ -21,7 +21,7 @@ const Root = () => {
         <Stack.Screen name="ExternalCamera" component={ExternalCameraScreen} />
         <Stack.Screen name="Permissions" component={PermissionsPage} />
         <Stack.Screen name="DevicesPage" component={DevicesPage} />
-        <Stack.Screen name="CameraPage" component={CameraPage} />
+        {/* <Stack.Screen name="CameraPage" component={CameraPage} /> */}
       </Stack.Navigator>
     </NavigationContainer>
   );
