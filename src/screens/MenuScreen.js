@@ -32,7 +32,7 @@ const MenuScreen = ({ navigation }) => {
   // ...
   listener.remove()
 
-  const Item = ({title}) => (
+  const Item = ({ title }) => (
     <View style={styles.item}>
       <Text style={styles.title}>{title}</Text>
     </View>
@@ -53,20 +53,29 @@ const MenuScreen = ({ navigation }) => {
       >
         <Text style={{ color: 'white', marginLeft: 20, fontSize: 17 }}>External Camera</Text>
       </TouchableOpacity>
+
       <TouchableOpacity style={styles.menuItemContainer}
         onPress={() => navigation.navigate('Permissions')}
       >
         <Text style={{ color: 'white', marginLeft: 20, fontSize: 17 }}>Permissions</Text>
       </TouchableOpacity>
+
       <TouchableOpacity style={styles.menuItemContainer}
         onPress={() => navigation.navigate('DevicesPage')}
       >
         <Text style={{ color: 'white', marginLeft: 20, fontSize: 17 }}>DevicesPage</Text>
       </TouchableOpacity>
+
       <TouchableOpacity style={styles.menuItemContainer}
         onPress={() => navigation.navigate('CameraPage')}
       >
         <Text style={{ color: 'white', marginLeft: 20, fontSize: 17 }}>CameraPage</Text>
+      </TouchableOpacity>
+      
+      <TouchableOpacity style={styles.menuItemContainer}
+        onPress={() => navigation.navigate('RNBridge')}
+      >
+        <Text style={{ color: 'white', marginLeft: 20, fontSize: 17 }}>RNBridge</Text>
       </TouchableOpacity>
 
     </SafeAreaView>

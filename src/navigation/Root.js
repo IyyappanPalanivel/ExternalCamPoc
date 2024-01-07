@@ -6,6 +6,7 @@ import MenuScreen from '../screens/MenuScreen';
 import { PermissionsPage } from '../screens/PermissionsPage';
 import { DevicesPage } from '../screens/DeviceScreen';
 import { CameraPage } from '../screens/CameraPage';
+import RNBridge from '../screens/RNBridge';
 
 const Stack = createNativeStackNavigator();
 
@@ -21,6 +22,7 @@ const Root = () => {
         <Stack.Screen name="ExternalCamera" component={ExternalCameraScreen} />
         <Stack.Screen name="Permissions" component={PermissionsPage} />
         <Stack.Screen name="DevicesPage" component={DevicesPage} />
+        <Stack.Screen name="RNBridge" component={RNBridge} />
         {/* <Stack.Screen name="CameraPage" component={CameraPage} /> */}
       </Stack.Navigator>
     </NavigationContainer>
