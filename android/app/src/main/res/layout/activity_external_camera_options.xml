@@ -21,4 +21,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Button from Native Android XML Code"/>
+
+    <Button
+        android:id="@+id/basic_preview_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Basic Preview"/>
   </LinearLayout>
