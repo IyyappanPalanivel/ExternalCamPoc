@@ -7,17 +7,11 @@
     android:background="@color/GRAY"
     tools:context=".externalcamera.BasicPreviewActivity">
 
-<!--    <com.serenegiant.widget.AspectRatioSurfaceView-->
-<!--        android:id="@+id/svCameraViewMain"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"-->
-<!--        android:layout_centerInParent="true" />-->
-
-        <SurfaceView
-            android:id="@+id/svCameraViewMain"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_centerInParent="true" />
+    <com.serenegiant.widget.AspectRatioSurfaceView
+        android:id="@+id/svCameraViewMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" />
 
     <RelativeLayout
         android:layout_width="match_parent"

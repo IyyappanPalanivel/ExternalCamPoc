@@ -24,8 +24,7 @@
     "react-native-static-safe-area-insets": "^2.2.0",
     "react-native-usb": "^0.1.1",
     "react-native-vector-icons": "^10.0.2",
-    "react-native-vision-camera": "^3.6.14",
-    "react-native-worklets-core": "^0.2.4"
+    "react-native-vision-camera": "^3.6.14"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
