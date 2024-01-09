@@ -11,8 +11,8 @@ const MenuScreen = ({ navigation }) => {
 
 
   useEffect(() => {
-    Camera.getCameraPermissionStatus().then(setCameraPermission);
-    Camera.getMicrophonePermissionStatus().then(setMicrophonePermission);
+    // Camera.getCameraPermissionStatus().then(setCameraPermission);
+    // Camera.getMicrophonePermissionStatus().then(setMicrophonePermission);
   }, []);
 
   console.log(`Re-rendering Navigator. Camera: ${cameraPermission} | Microphone: ${microphonePermission}`);
@@ -24,13 +24,6 @@ const MenuScreen = ({ navigation }) => {
 
   const showPermissionsPage = cameraPermission !== 'granted' || microphonePermission === 'not-determined';
 
-  const listener = Camera.addCameraDevicesChangedListener((devices) => {
-    console.log(`Devices changed: ${devices}`)
-    Alert.alert(devices);
-    // this.usbCamera = devices.find((d) => d.position === "external")
-  })
-  // ...
-  listener.remove()
 
   const Item = ({ title }) => (
     <View style={styles.item}>

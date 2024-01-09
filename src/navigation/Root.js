@@ -13,7 +13,7 @@ const Stack = createNativeStackNavigator();
 const Root = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
+      <Stack.Navigator initialRouteName='RNBridge'>
         <Stack.Screen
           name="Menu"
           component={MenuScreen}
